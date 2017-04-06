@@ -1,0 +1,41 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+
+\author{Sofía Salto}
+\title{Tarea 3}
+
+
+\begin{document}
+La optimización de funciones no es un tema analizado únicamente con herramientas del cálculo en
+una variable y de la programación lineal. Esta se puede generalizar a espacios más generales como
+son los espacios de Banach. A continuación se presenta el siguiente problema de optimización:
+
+
+
+
+
+\begin{equation}
+\begin{array}{ll}
+\text{mín} \ J(u,y,a)\ &= \ \int_{0}^{a} (u'(x))^{2} \, dx \, + \, \ \int_{0}^{a} y^{2}(x) \, dx \, + \, \dfrac{a^{2}}{\text{med}(0,a,a^{2})}\\
+\text{sujeto a} & \\ \nonumber
+&
+\left \{
+\begin{array}{rcl}
+-u''(x)+\alpha(x)u(x)&=&y(x) \quad \text{en} \quad (0,a) \\
+u&=& 0 \, \, \quad \quad \text{en} \quad \{0,a\} \\
+\lim_{x\to 0} y(x)&=&a, \\
+a &\geq & 4.
+\end{array}
+\right.
+\end{array}
+\end{equation}
+
+
+
+\end{document}
